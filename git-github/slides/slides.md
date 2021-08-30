@@ -27,17 +27,12 @@ Sesión 1: Introducción a Git y GitHub
   </span>
 </div>
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/open-source-uc/talleres/tree/main/git-github" target="_blank" alt="GitHub"
-    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
 
 <style>
+h1 {
+  background-color: white;
+  background-image: initial;
+}
 p {
   color: white;
 }
@@ -47,36 +42,108 @@ p {
 
 # Control de Versiones
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+## ¿Qué es un sistema de control de versiones?
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+- 🛠 Es un sistema que registra los cambios realizados en un archivo o grupo de archivos con tal de poder recuperar fácilmente versiones antiguas o identificar cambios específicos.
 
-<br>
-<br>
+- Nos permite evitar esto:
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+<img src="old-versiones.png" width="300" />
 
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<!-- Si eres programador y quieres conservar cada versión de una imagen o diseño (que sin duda es lo que quieres), utilizar un sistema de control de versiones es una decisión muy acertada. El sistema te permite volver a versiones anteriores de archivos, regresar a versiones anteriores de todo el proyecto, comparar cambios a lo largo del tiempo, ver quién modificó por última vez el contenido que pudo haber causado el problema, ver quién introdujo el problema y cuándo, y mucho más. El uso de este sistema de control de versiones también suele significar que si se equivoca o pierde archivos, se pueden restaurar fácilmente. -->
 
 ---
+
+# Git es
+
+El sistema de control de versiones mas usado en el mundo! 
+
+Y además es:
+
+- 👥 **Distribuido** - git siempre mantiene una copia completa y autónoma del código en cada computador. Es a prueba de incendios 🚒! 
+
+- 🏠 **Local primero** - git solo manda información al servidor cuando tu se lo pides explícitamente (no es Drive!)
+- ➕ **Mayoritariamente aditivo** - borrar cosas de git es muy díficil y requiere comandos especiales (una gran idea!)
+
+
+---
+
+
+<center><img src="distribuido.png" width="700" /></center>
+
+
+---
+
+## Los tres estados de Git
+- 📁 Directorio de trabajo: Tu carpeta del PC
+- 🔴 Staging: Área de preparación 
+- <img src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" width="21" height="21" style="filter:invert(100%);display:inline;margin-right:8px"/>Repositorio de git
+
+
+
+
+---
+
+## Métodología básica de Git
+
+- Modificar
+- Agregar a área de ensayo
+- Confirmar cambios (commit)
+
+---
+
+## ¿Cómo instalar git?
+
+[Acá](https://git-scm.com/downloads)
+
+
+
+---
+
+## Flujo de git (borrar despues)
+
+
+```python {monaco}
+# ./src/main.py
+
+print("hola mundo')
+
+```
+
+
+```bash {1,2|3,4|5,6}
+# Pasar los cambios de main.py a preparación
+git add .src/main.py
+# Confirmar los cambios y enviar a BBDD
+git commit -m "fix: remove a bug"
+# Enviar repo al servidor
+git push -u origin HEAD
+```
+
+
+
+
+---
+
+
+
+
+<div v-click-hide>Hola?</div>
+
+<v-clicks>
+
+- add files
+- commit -m "mensaje"
+- push
+
+</v-clicks>
+
+<!-- https://sli.dev/guide/animations.html#v-after :( -->
+<div v-click-hide>xd</div>
+
+<v-click>
+
+hola
+
+</v-click>
