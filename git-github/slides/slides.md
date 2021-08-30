@@ -67,6 +67,14 @@ Y además es:
 - ➕ **Mayoritariamente aditivo** - borrar cosas de git es muy díficil y requiere comandos especiales (una gran idea!)
 
 
+
+---
+
+## ¿Cómo instalar git?
+
+[Acá](https://git-scm.com/downloads)
+
+
 ---
 
 
@@ -87,29 +95,14 @@ Y además es:
 
 ## Métodología básica de Git
 
-- Modificar
-- Agregar a área de ensayo
-- Confirmar cambios (commit)
+- ✍ **Modificar archivos**
+- ➡ **Agregar cambios al área de preparación** (*stagear* - staging area)
+- ✅ **Confirmar cambios** (*commitear*), agregándolos a la BBDD de git.
+- ☁ **Subir los cambios a Gitub** (*pushear*)
 
 ---
 
-## ¿Cómo instalar git?
-
-[Acá](https://git-scm.com/downloads)
-
-
-
----
-
-## Flujo de git (borrar despues)
-
-
-```python {monaco}
-# ./src/main.py
-
-print("hola mundo')
-
-```
+## Flujo de git
 
 
 ```bash {1,2|3,4|5,6}
@@ -120,8 +113,6 @@ git commit -m "fix: remove a bug"
 # Enviar repo al servidor
 git push -u origin HEAD
 ```
-
-
 
 
 ---
