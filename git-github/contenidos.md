@@ -9,13 +9,13 @@
 
 - **Fundamentos de Git**: Local, distribuido y el principio de solo añadir datos.
 
+- **Interfaces a Git:** La línea de comandos, interfaces gráficas (GitHub Desktop, GitKraken, VSCode).
+
 - **Los tres estados**: Directorio de trabajo, staging y el repositorio.
 
 ![los tres estados](https://git-scm.com/book/en/v2/images/areas.png)
 
 - **Workflow básico de git**: Modificar, agregar a staging, confirmar los cambios (commitear).
-
-- **Interfaces a Git:** La línea de comandos, interfaces gráficas (GitHub Desktop, GitKraken, VSCode).
 
 - **¿Cómo instalar git?**: macOS (Homebrew), Windows (GitHub Desktop? Git bash?), Linux (apt/pacman). ¿GitHub CLI?
 
@@ -28,7 +28,6 @@ $ git config --global init.defaultBranch main
 $ git config --global core.editor code
 ```
 
-- **¿Cómo conseguir ayuda?**: Documentación de git, `git help` StackOverflow es tu amigo (con cuidado!)
 
 ### Empezando a trabajar
 
@@ -36,13 +35,15 @@ $ git config --global core.editor code
 
 - **Grabar cambios**: Archivos rastreados y no rastreados, staging, `git status` y tu primer commit. `git rm` para quitar archivos de staging.
 
-- **Ver la historia**: `git log`
+- **Ver la historia**: `git log`, revisar status `git status`
 
 - **Deshacer y arreglar cosas**: `git commit --ammend` (pre-pull) y con ayuda de `git status`: `git reset HEAD`, `git restore`.
 
 - **Sincronizando cambios**: `git push` y `git pull`, revisar historial de cambios.
 
 - **Resumen**: Cheatsheet de comandos básicos, workflow completo.
+
+- **¿Cómo conseguir ayuda?**: Documentación de git, `git help` StackOverflow es tu amigo (con cuidado!)
 
 ## Sesión 2 (Git avanzado)
 ### Funcionamiento de Git

@@ -28,21 +28,59 @@ Sesión 1: Introducción a Git y GitHub
 </div>
 
 
-<style>
-h1 {
-  background-color: white;
-  background-image: initial;
-}
-p {
-  color: white;
-}
-</style>
+
+---
+layout: section
+---
+
+# Antes de empezar...
+
+---
+
+# ¿Qué veremos hoy?
+
+- Qué es sistema de control de versiones
+- Qué es git y qué los distingue de otros sistemas
+- Los fundamentos detrás de git
+- Comandos básicos y un workflow típico
+
+---
+
+# Algunos tips
+
+
+
+
+
+---
+
+# ¿Cómo instalamos git?
+
+Git puede ser instalado de muchas formas distintas, cuál usar depende del contexto y lo que te pidan!
+
+
+Los links de descarga a la versión oficial de Git se pueden encontrar en [git-scm.com/downloads](https://git-scm.com/downloads).
+
+- En Windows, se puede obtener con un installador disponible en la página, que prevee una consola de Linux (Git Bash), y con interfaces gráficas como GitHub Desktop.
+- En macOS, con `homebrew install git` y con un instalador binario disponible en la página.
+- Y en Linux, puede encontrarse en la mayoria de los administradores de paquetes, como `apt`, `pacman`, `yum` o `linuxbrew`.
+
+<!-- 
+Instalar gh? https://github.com/cli/cli#installation
+
+ -->
+
+
+---
+layout: section
+---
+
+# Git como sistema de control de versiones
 
 ---
 
 # Control de Versiones
 
-## ¿Qué es un sistema de control de versiones?
 
 - 🛠 Es un sistema que registra los cambios realizados en un archivo o grupo de archivos con tal de poder recuperar fácilmente versiones antiguas o identificar cambios específicos.
 
@@ -55,14 +93,15 @@ p {
 
 ---
 
-# Git es
+# Git
 
-El sistema de control de versiones mas usado en el mundo! 
+El sistema de control de versiones mas usado en el mundo!
 
-Y además es:
+Git es utilizado por prácticamente todas las compañías de tecnología a nivel mundial, haciendo funcionar todo desde Facebook hasta la NASA.
+
+A grandes rasgos Git es:
 
 - 👥 **Distribuido** - git siempre mantiene una copia completa y autónoma del código en cada computador. Es a prueba de incendios 🚒! 
-
 - 🏠 **Local primero** - git solo manda información al servidor cuando tu se lo pides explícitamente (no es Drive!)
 - ➕ **Mayoritariamente aditivo** - borrar cosas de git es muy díficil y requiere comandos especiales (una gran idea!)
 
@@ -70,71 +109,146 @@ Y además es:
 
 ---
 
-## ¿Cómo instalar git?
-
-[Acá](https://git-scm.com/downloads)
-
-
----
-
-
 <center><img src="distribuido.png" width="700" /></center>
 
+---
+
+# Los tres estados de Git
+Los archivos en Git pueden residir en tres estados distintos:
+
+- 📝 **Modificado:** algo que cambiaste pero que todavía no está en el historial de cambios.
+- ➕ **Stageado** (preparado o rastreado): algo que marcaste para ser incluido en tu próximo conjunto de cambios.
+- 📂 **Commiteado** (confirmado): Algo que ya fue guardado en el historial de cambios.
+
+Así es como versiones de nuestros archivos pueden estar en tres lugares distintos:
+
+
+<img src="tres-lugares.png" style="display: block; margin: 0 auto;" width="340"/>
+
+---
+layout: section
+---
+
+# ¿Cómo usamos Git?
+
 
 ---
 
-## Los tres estados de Git
-- 📁 Directorio de trabajo: Tu carpeta del PC
-- 🔴 Staging: Área de preparación 
-- <img src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" width="21" height="21" style="filter:invert(100%);display:inline;margin-right:8px"/>Repositorio de git
+# Flujo de git local
 
-
-
-
----
-
-## Métodología básica de Git
-
-- ✍ **Modificar archivos**
-- ➡ **Agregar cambios al área de preparación** (*stagear* - staging area)
-- ✅ **Confirmar cambios** (*commitear*), agregándolos a la BBDD de git.
-- ☁ **Subir los cambios a Gitub** (*pushear*)
-
----
-
-## Flujo de git
-
+Luego de editar los archivos del repositorio:
 
 ```bash {1,2|3,4|5,6}
 # Pasar los cambios de main.py a preparación
-git add .src/main.py
+git add src/main.py
 # Confirmar los cambios y enviar a BBDD
-git commit -m "fix: remove a bug"
-# Enviar repo al servidor
-git push -u origin HEAD
+git commit -m "remover except Exception"
+```
+
+---
+
+# GitHub
+¿Y a dónde mandamos nuestros cambios?
+
+- ☁ GitHub es un servicio que almacena repositorios de Git y permite colaborar fácilmente con otras personas.
+- 📝 Desde la web de GitHub puedes fácilmente ver el historial de cambios y hacer operaciones simples.
+- 👥 Desde GitHub también puedes explorar repos de otras personas, reportar bugs y leer su documentación.
+
+## ¿Pero cómo?
+
+Git nos permite conectar nuestro repositorio con un **origen**, un servidor remoto que nos permite sincronizar nuestros cambios y guardarlos de forma segura.
+
+- ⬆ Cuando queremos subir nuestros cambios locales, usamos `git push`.
+- ⬇ Cuando queremos obtener cambios remotos, usamos `git pull`.
+
+
+---
+layout: section
+---
+
+# Demostración
+
+
+---
+
+
+# El archivo `.gitignore`
+
+Utilizar `git add .` con confianza
+
+Es un archivo que le indica a Git que archivos o directorios ignorar. Cada línea corresponde a un path a ser ignorado, cuyos cambios ya no serán notados por git.
+
+
+```bash
+# Normalmente se ignorar archivos autogenerados por el sistema, como
+.DS_Store
+
+# Además de archivos que son generados por programas
+.venv/
+dist/
+
+# Tambien secreatos o contraseñas
+.key
+.env
 ```
 
 
 ---
 
 
+# El archivo `.gitignore`
+
+```bash
+# Se pueden entregar patrones en vez de archivos o directorios
+datos/generado-*.csv  # generado-1.csv, generado-2.csv, generado-nuevo.csv
+
+# Además con ! se puede considerar elementos que fueron ignorados
+# por una regla anterior (rechequear esto plz)
+!datos/iniciales.csv
+
+# Tambien secreatos o contraseñas
+.key
+.env
+```
 
 
-<div v-click-hide>Hola?</div>
+---
+layout: section
+---
 
-<v-clicks>
+# El rol de GitHub
 
-- add files
-- commit -m "mensaje"
-- push
 
-</v-clicks>
+---
 
-<!-- https://sli.dev/guide/animations.html#v-after :( -->
-<div v-click-hide>xd</div>
+# Sincronizar los camios
 
-<v-click>
 
-hola
+```bash
+# Para obtener un repositorio, se utiliza:
+git clone
 
-</v-click>
+# Si alguien sube realizaon cambios, se pueden obtener con:
+git pull
+
+# Para subir los cambios propios se utiliza:
+git push # -u origin HEAD
+```
+
+> **Importante!**
+>    Hay que evitar realizar commits a una rama (?)
+>    en la que está trabajando otra persona.
+
+---
+
+# Cómo conseguir ayuda sobre Git
+
+- 🔎 **Googlea!** Git es extremedamente popular, y lo más probable es que no eres la primera persona en tener ese problema.'
+
+> Pero ten cuidado! 
+> No todo el material es igual calidad, así que siempre debes estar atento a comentarios o advertencias.
+
+- 📚 **La documentación de git** es notoriamente buena, y viene con un libro, *Pro Git*, de muy buena calidad. (Ambos tienen traducciones en español)
+
+
+---

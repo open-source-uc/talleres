@@ -1,9 +1,29 @@
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+.slidev-layout.section h1 {
+  background-color: #a1e3fa;
+  background-image: linear-gradient(45deg, #a1e3fa 0%, #66bedf 100%);
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
+}
+
+.slidev-layout.default h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #6ae0f0;
+  /* background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent; */
+}
+
+.shiki-container :is(pre, code, kbd, samp) {
+  font-size: 1.5em;
+  line-height: 1.8rem;
 }
