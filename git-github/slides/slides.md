@@ -86,7 +86,7 @@ layout: section
 
 - Nos permite evitar esto:
 
-<img src="old-versiones.png" width="300" />
+<img src="/old-versiones.png" width="300" />
 
 
 <!-- Si eres programador y quieres conservar cada versión de una imagen o diseño (que sin duda es lo que quieres), utilizar un sistema de control de versiones es una decisión muy acertada. El sistema te permite volver a versiones anteriores de archivos, regresar a versiones anteriores de todo el proyecto, comparar cambios a lo largo del tiempo, ver quién modificó por última vez el contenido que pudo haber causado el problema, ver quién introdujo el problema y cuándo, y mucho más. El uso de este sistema de control de versiones también suele significar que si se equivoca o pierde archivos, se pueden restaurar fácilmente. -->
@@ -109,7 +109,7 @@ A grandes rasgos Git es:
 
 ---
 
-<center><img src="distribuido.png" width="700" /></center>
+<center><img src="/distribuido.png" width="700" /></center>
 
 ---
 
@@ -123,7 +123,7 @@ Los archivos en Git pueden residir en tres estados distintos:
 Así es como versiones de nuestros archivos pueden estar en tres lugares distintos:
 
 
-<img src="tres-lugares.png" style="display: block; margin: 0 auto;" width="340"/>
+<img src="/tres-lugares.png" style="display: block; margin: 0 auto;" width="340"/>
 
 ---
 layout: section
