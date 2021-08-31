@@ -3,25 +3,33 @@ theme: default
 background: https://source.unsplash.com/842ofHC6MaI
 # apply any windi css classes to the current slide
 class: 'text-center'
-# https://sli.dev/custom/highlighters.html
-highlighter: shiki
 # show line numbers in code blocks
-lineNumbers: false
+lineNumbers: true
 # some information about the slides, markdown enabled
 info: |
   ## Taller de Git y GitHub
   Hecho por Open Source UC
 
   Más información en [GitHub](https://github.com/open-source-uc/talleres)
+
+fonts:
+  # basically the text
+  sans: 'Robot'
+  # use with `font-serif` css class from windicss
+  serif: 'Robot Slab'
+  # for code blocks, inline code, etc.
+  mono: 'Fira Code'
+
 ---
 
 # Taller de Git y GitHub
 
-Sesión 1: Introducción a Git y GitHub
+## **Sesión 1: Introducción a Git y GitHub**
 <div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    ¿Qué es git? <carbon:arrow-right class="inline"/>
+  <a href="https://osuc.dev/" style="border-style: revert;"> <span class="px-2 py-1 rounded cursor-pointer bg-black bg-opacity-60" hover="bg-opacity-100">
+    por Open Source UC <ph:link-simple-duotone class="inline"/>
   </span>
+  </a>
 </div>
 
 ---
@@ -59,11 +67,6 @@ Los links de descarga a la versión oficial de Git se pueden encontrar en [git-s
 - Y en **Linux**, puede encontrarse en la mayoria de los administradores de paquetes, como `apt`, `pacman`, `yum` o `brew`.
 
 También pueden instalar Git junto con una interfaz gráfica, como [GitHub Desktop](https://desktop.github.com/).
-<!-- 
-Instalar gh? https://github.com/cli/cli#installation
-
- -->
-
 
 ---
 layout: section
@@ -80,10 +83,9 @@ layout: section
 
 - Nos permite evitar esto:
 
-<img src="/old-versiones.png" width="300" />
+<br>
+<img style="display: block; margin: 0 auto;" src="/old-versiones.png" width="300" />
 
-
-<!-- Si eres programador y quieres conservar cada versión de una imagen o diseño (que sin duda es lo que quieres), utilizar un sistema de control de versiones es una decisión muy acertada. El sistema te permite volver a versiones anteriores de archivos, regresar a versiones anteriores de todo el proyecto, comparar cambios a lo largo del tiempo, ver quién modificó por última vez el contenido que pudo haber causado el problema, ver quién introdujo el problema y cuándo, y mucho más. El uso de este sistema de control de versiones también suele significar que si se equivoca o pierde archivos, se pueden restaurar fácilmente. -->
 
 ---
 
@@ -103,7 +105,7 @@ A grandes rasgos Git es:
 
 ---
 
-<center><img src="/distribuido.png" width="700" /></center>
+<img style="display: block; margin: 0 auto;" src="/distribuido.png" width="700" />
 
 ---
 
@@ -111,7 +113,7 @@ A grandes rasgos Git es:
 Los archivos en Git pueden residir en tres estados distintos:
 
 - 📝 **Modificado:** algo que cambiaste pero que todavía no está en el historial de cambios.
-- ➕ **Stageado** (preparado o rastreado): algo que marcaste para ser incluido en tu próximo conjunto de cambios.
+- ➕ **Stageado** (preparado): algo que marcaste para ser incluido en tu próximo conjunto de cambios.
 - 📂 **Commiteado** (confirmado): Algo que ya fue guardado en el historial de cambios.
 
 Así es como versiones de nuestros archivos pueden estar en tres lugares distintos:
@@ -125,18 +127,48 @@ layout: section
 
 # ¿Cómo usamos Git?
 
+--- 
+
+# Clientes o interfaces de Git
+Hay muchas distintas formas de utilizar Git, desde la linea de comandos a toda clase de interfaces gráficas.  **Cada una tiene sus beneficios.**
+
+- 👩‍💻 Tenemos la interfaz por linea de comandos (consola)
+
+<br>
+<img style="display: block; margin: 0 auto;" width="640" src="/cli.png"/>
+<br>
+
+- 📺 Y muchos, muchos clientes gráficos como GitHub Desktop, GitKraken o incluso VSCode o PyCharm.
+
+--- 
+
+# Clientes o interfaces de Git
+Hay muchas distintas formas de utilizar Git, desde la linea de comandos a toda clase de interfaces gráficas.  **Cada una tiene sus beneficios.**
+
+- 👩‍💻 Tenemos la interfaz por linea de comandos (consola)
+
+- 📺 Y muchos, muchos clientes gráficos como [GitHub Desktop](https://desktop.github.com/), [GitKraken](https://www.gitkraken.com/) o incluso [VSCode](https://code.visualstudio.com/docs/editor/versioncontrol) o [PyCharm](https://www.jetbrains.com/help/pycharm/enabling-version-control.html).
+
+<img style="display: block; margin: 0 auto;" width="750" src="https://1v5ymx3zt3y73fq5gy23rtnc-wpengine.netdna-ssl.com/wp-content/uploads/2021/03/og-git-client.png" />
 
 ---
 
 # Flujo de git local
+Despues de editar uno o más archivos en nuestra carpeta de trabajo, queremos primero:
 
-Luego de editar los archivos del repositorio:
+1. Stagearlos, agregándolos al área de preparación con `git add <archivo>`.
+2. Commitearlos, agregando los cambios preparados al historial de cambios con `git commit`.
+3. Revisar el estado de nuestro repositorio, utilizando `git status`.
 
-```bash {1,2|3,4|5,6}
-# Pasar los cambios de main.py a preparación
+Por ejemplo. Digamos que tenemos un archivo `main.py` en la carpeta `src/` cuyos cambios ahora quieres guardar.
+
+```bash {1,2|3,4|5,6|all}
+# Pasar los cambios de main.py a preparación (Staging)
 git add src/main.py
-# Confirmar los cambios y enviar a BBDD
+# Guardar los cambios en el historial de Git.
 git commit -m "remover except Exception"
+# Verificamos el estado de nuestro repositorio
+git status
 ```
 
 ---
@@ -173,27 +205,36 @@ Utilizar `git add .` con confianza
 Es un archivo que le indica a Git que archivos o directorios ignorar. Cada línea corresponde a un path a ser ignorado, cuyos cambios ya no serán notados por git.
 
 
-```bash
+```gitignore
 # Normalmente se ignorar archivos autogenerados por el sistema, como
 .DS_Store
 
-# Además de archivos que son generados por programas
+# O archivos que solo te sirven a ti, como entornos virtuales
 .venv/
 dist/
 
 # O secretos o contraseñas que nadie debería ver
-.key
 .env
+archivo_ultra_secreto.txt
 ```
 
 ---
 
 # Cómo conseguir ayuda sobre Git
 
-- 🔎 **Googlea!** Git es extremedamente popular, y lo más probable es que no eres la primera persona en tener ese problema.'
+### Si no recuerdas cómo usar un comando
+🗒 Puedes abrir el manual que explica la funcionalidad de cualquier comando de git usando `git help <comando>`. Por ejemplo, `git help commit`.
 
-> Pero ten cuidado! 
-> No todo el material es igual calidad, así que siempre debes estar atento a comentarios o advertencias.
+### Si quieres repasar o explorar mas allá
+📚 **La documentación de git** es notoriamente buena, y viene con un libro, *Pro Git*, de muy buena calidad. (Ambos tienen traducciones en español)
 
-- 📚 **La documentación de git** es notoriamente buena, y viene con un libro, *Pro Git*, de muy buena calidad. (Ambos tienen traducciones en español)
+### Si tienes problemas o errores inesperados
+🔎 **Googlea!** Git es extremadamente popular, y lo más probable es que no eres la primera persona en el mismo problema. Revisa sitios como [StackOverflow](https://stackoverflow.com/).
 
+**Sin embargo**, es importante que siempre tengas un ojo a comentarios y te limites a buenas fuentes. No todos los recursos son de igual calidad, y **correr a ciegas un comando puede costarte meses de trabajo.**
+
+---
+
+# Open Source UC
+
+- Contacto, etc

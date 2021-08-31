@@ -24,6 +24,6 @@
 }
 
 .shiki-container :is(pre, code, kbd, samp) {
-  font-size: 1.5em;
-  line-height: 1.8rem;
+  font-size: 1.7em;
+  line-height: 2rem;
 }
