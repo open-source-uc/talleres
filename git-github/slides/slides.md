@@ -24,8 +24,6 @@ Sesión 1: Introducción a Git y GitHub
   </span>
 </div>
 
-
-
 ---
 layout: section
 ---
@@ -34,34 +32,33 @@ layout: section
 
 ---
 
-# ¿Qué veremos hoy?
+# Algunas cosas antes de que empecemos ✋
 
-- Qué es sistema de control de versiones
-- Qué es git y qué los distingue de otros sistemas
-- Los fundamentos detrás de git
-- Comandos básicos y un workflow típico
+- 🎙 Asegúrense de **mantener apagado sus micrófonos** cuando no los estén usando
+- 💬 **Aprovechen el chat** para hacer preguntas sobre la presentación
+- 🖐 O bien esperen al final de la presentación, **levantando la mano**
 
----
+## ¿Qué veremos hoy?
 
-# Algunos tips
-
-
-
-
+- Qué es un **sistema de control de versiones** (VCS)
+- Qué es **git** y qué lo hace especial
+- Los **fundamentos detrás de git**
+- Un **flujo de uso** de git local 🏠 y remoto ☁, usando GitHub.
 
 ---
 
-# ¿Cómo instalamos git?
+# ¿Cómo instalamos git? ⬇
 
-Git puede ser instalado de muchas formas distintas, cuál usar depende del contexto y lo que te pidan!
+Git puede ser instalado de muchas formas distintas; cuál usar depende del contexto y lo que te pidan!
 
 
 Los links de descarga a la versión oficial de Git se pueden encontrar en [git-scm.com/downloads](https://git-scm.com/downloads).
 
-- En Windows, se puede obtener con un installador disponible en la página, que provee una consola de Linux (Git Bash), y con interfaces gráficas como GitHub Desktop.
-- En macOS, con Homebrew, usando `brew install git`.
-- Y en Linux, puede encontrarse en la mayoria de los administradores de paquetes, como `apt`, `pacman`, `yum` o `linuxbrew`.
+- En **Windows**, se puede obtener con un installador disponible en la página, que provee una consola de Linux (Git Bash), y con interfaces gráficas como GitHub Desktop.
+- En **macOS**, con Homebrew, usando `brew install git`.
+- Y en **Linux**, puede encontrarse en la mayoria de los administradores de paquetes, como `apt`, `pacman`, `yum` o `brew`.
 
+También pueden instalar Git junto con una interfaz gráfica, como [GitHub Desktop](https://desktop.github.com/).
 <!-- 
 Instalar gh? https://github.com/cli/cli#installation
 
@@ -72,14 +69,14 @@ Instalar gh? https://github.com/cli/cli#installation
 layout: section
 ---
 
-# Git como sistema de control de versiones
+# Sistemas de Control de Versiones
 
 ---
 
-# Control de Versiones
+# Sistemas de Control de Versiones (VCSs)
 
 
-- 🛠 Es un sistema que registra los cambios realizados en un archivo o grupo de archivos con tal de poder recuperar fácilmente versiones antiguas o identificar cambios específicos.
+- 📂 Es un sistema que registra los cambios realizados en un archivo o grupo de archivos con tal de poder recuperar fácilmente versiones antiguas o identificar cambios específicos.
 
 - Nos permite evitar esto:
 
@@ -163,7 +160,7 @@ Git nos permite conectar nuestro repositorio con un **origen**, un servidor remo
 layout: section
 ---
 
-# Demostración
+# Demostración 🛠
 
 
 ---
@@ -184,57 +181,10 @@ Es un archivo que le indica a Git que archivos o directorios ignorar. Cada líne
 .venv/
 dist/
 
-# Tambien secreatos o contraseñas
+# O secretos o contraseñas que nadie debería ver
 .key
 .env
 ```
-
-
----
-
-
-# El archivo `.gitignore`
-
-```bash
-# Se pueden entregar patrones en vez de archivos o directorios
-datos/generado-*.csv  # generado-1.csv, generado-2.csv, generado-nuevo.csv
-
-# Además con ! se puede considerar elementos que fueron ignorados
-# por una regla anterior (rechequear esto plz)
-!datos/iniciales.csv
-
-# Tambien secreatos o contraseñas
-.key
-.env
-```
-
-
----
-layout: section
----
-
-# El rol de GitHub
-
-
----
-
-# Sincronizar los camios
-
-
-```bash
-# Para obtener un repositorio, se utiliza:
-git clone
-
-# Si alguien sube realizaon cambios, se pueden obtener con:
-git pull
-
-# Para subir los cambios propios se utiliza:
-git push # -u origin HEAD
-```
-
-> **Importante!**
->    Hay que evitar realizar commits a una rama (?)
->    en la que está trabajando otra persona.
 
 ---
 
@@ -247,5 +197,3 @@ git push # -u origin HEAD
 
 - 📚 **La documentación de git** es notoriamente buena, y viene con un libro, *Pro Git*, de muy buena calidad. (Ambos tienen traducciones en español)
 
-
----
