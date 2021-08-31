@@ -1,8 +1,5 @@
 ---
-# try also 'default' to start simple
 theme: default
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/842ofHC6MaI
 # apply any windi css classes to the current slide
 class: 'text-center'
@@ -61,8 +58,8 @@ Git puede ser instalado de muchas formas distintas, cuál usar depende del conte
 
 Los links de descarga a la versión oficial de Git se pueden encontrar en [git-scm.com/downloads](https://git-scm.com/downloads).
 
-- En Windows, se puede obtener con un installador disponible en la página, que prevee una consola de Linux (Git Bash), y con interfaces gráficas como GitHub Desktop.
-- En macOS, con `homebrew install git` y con un instalador binario disponible en la página.
+- En Windows, se puede obtener con un installador disponible en la página, que provee una consola de Linux (Git Bash), y con interfaces gráficas como GitHub Desktop.
+- En macOS, con Homebrew, usando `brew install git`.
 - Y en Linux, puede encontrarse en la mayoria de los administradores de paquetes, como `apt`, `pacman`, `yum` o `linuxbrew`.
 
 <!-- 
