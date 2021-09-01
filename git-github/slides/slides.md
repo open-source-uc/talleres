@@ -39,6 +39,10 @@ layout: section
 
 # Antes de empezar...
 
+<!--
+TODO: legibilidad texto titulo
+-->
+
 ---
 
 # Algunas cosas antes de que empecemos ✋
@@ -52,7 +56,7 @@ layout: section
 - Qué es un **sistema de control de versiones** (VCS)
 - Qué es **git** y qué lo hace especial
 - Los **fundamentos detrás de git**
-- Un **flujo de uso** de git local 🏠 y remoto ☁, usando GitHub.
+- Un **flujo de uso** de git local 🏠 y remoto ☁, usando GitHub
 
 <!-- Mensaje pseudomotivacional: es muy dificil, y puede que no lo entiendan todo a la primera, siempre tienen la presentación! -->
 ---
@@ -124,8 +128,8 @@ Git es utilizado por prácticamente todas las compañías de tecnología a nivel
 
 A grandes rasgos Git es:
 
-- 👥 **Distribuido** - git siempre mantiene una copia completa y autónoma del código en cada computador. Es a prueba de incendios 🚒! 
-- 🏠 **Local primero** - git solo manda información al servidor cuando tu se lo pides explícitamente (no es Drive!)
+- 👥 **Distribuido** - git siempre mantiene una copia completa y autónoma del código en cada computador. Es a prueba de incendios 🚒!
+- 🏠 **Local primero** - git solo manda información al servidor cuando tu se lo pides explícitamente (no es Drive!).
 
 
 ---
@@ -138,9 +142,9 @@ Git es utilizado por prácticamente todas las compañías de tecnología a nivel
 
 A grandes rasgos Git es:
 
-- 👥 **Distribuido** - git siempre mantiene una copia completa y autónoma del código en cada computador. Es a prueba de incendios 🚒! 
-- 🏠 **Local primero** - git solo manda información al servidor cuando tu se lo pides explícitamente (no es Drive!)
-- ➕ **Mayoritariamente aditivo** - borrar cosas de git es muy díficil y requiere comandos especiales (una gran idea!)
+- 👥 **Distribuido** - git siempre mantiene una copia completa y autónoma del código en cada computador. Es a prueba de incendios 🚒!
+- 🏠 **Local primero** - git solo manda información al servidor cuando tu se lo pides explícitamente (no es Drive!).
+- ➕ **Mayoritariamente aditivo** - borrar cosas de git es muy díficil y requiere comandos especiales (una gran idea!).
 
 ---
 layout: section
@@ -174,7 +178,9 @@ Hay muchas distintas formas de utilizar <mdi-git class="inline"/> git, desde la 
 
 <img style="display: block; margin: 0 auto;" width="750" src="https://1v5ymx3zt3y73fq5gy23rtnc-wpengine.netdna-ssl.com/wp-content/uploads/2021/03/og-git-client.png" />
 
+
 ---
+
 
 # Anatomía de un comando 
 Los comandos en Git siguen un patrón que se conoce como el [estándar POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), por lo que siguen una forma muy similar a otros comandos comunes como `ls`, `cd`, `grep`, entre otros.
@@ -191,6 +197,20 @@ Los comandos en Git siguen un patrón que se conoce como el [estándar POSIX](ht
 <img style="display: block; margin: 0 auto;" src="/anatomia1.png" width="700"/>
 
 <!-- Ahora agregamos opciones en formato largo o corto -->
+---
+
+# Algunos comandos básicos de consola
+Comandos para sobrevivir si no tienes experiencia previa.
+
+- `ls`: Muestra los archivos en la carpeta actual.
+
+- `cd <directorio>`: Cambia la carpeta actual. `cd ..` significa volver atrás.
+
+El `<directorio>` puede ser descrito como una ruta **absoluta o relativa**
+
+- **Relativo**: `Tarea/T0`
+- **Absoluto:** `/Users/agucova/Progra/Syllabus/Tarea/T0`
+
 ---
 
 # Los tres estados de <mdi-git class="inline"/> git
@@ -245,6 +265,13 @@ git commit -m "escribe aquí una descripción corta del cambio"
 # Viendo el historial de cambios local
 Podemos usar el comando `git log` para visualizar el historial de commits.
 
+<!-- eliminar comentario despues (benjavicente): 
+  siento que se ve mal comparado a una imagen más pequeña porque el
+  resto de las imagenes que van fuera del margen son servicios, los
+  terminales se han mostrado siempre completamente
+  (medio nitpick xd, esta bien)
+ -->
+
 <img style="display: block; margin: 0 auto;" src="/cli3.png" width="900"/>
 
 ---
@@ -288,7 +315,7 @@ Git nos permite conectar nuestro repositorio con un **origen**, un servidor remo
 layout: section
 ---
 
-# <codicon-terminal-bash class="inline"/> Demostración 
+# <codicon-terminal-bash class="inline"/> [Demostración](https://github.com/Baelfire18/template-taller-git)
 
 ---
 
@@ -298,12 +325,16 @@ layout: section
 🗒 Puedes abrir el manual que explica la funcionalidad de cualquier comando de git usando `git help <comando>`. Por ejemplo, `git help commit`.
 
 ### Si quieres repasar o explorar mas allá
-📚 **[La documentación de git](https://git-scm.com/doc)** es notoriamente buena, y viene con un libro, **[Pro Git](https://git-scm.com/book/es/v2)**, de muy buena calidad. (Ambos tienen traducciones en español)
+📚 **[La documentación de git](https://git-scm.com/doc)** es notoriamente buena, y viene con un libro, **[Pro Git](https://git-scm.com/book/es/v2)**, de muy buena calidad (ambos tienen traducciones en español).
 
 ### Si tienes problemas o errores inesperados
 🔎 **Googlea!** Git es extremadamente popular, y lo más probable es que no eres la primera persona en el mismo problema. Revisa sitios como [StackOverflow](https://stackoverflow.com/).
 
 **Sin embargo**, es importante que siempre tengas un ojo a comentarios y te limites a buenas fuentes. No todos los recursos son de igual calidad, y **correr a ciegas un comando puede costarte meses de trabajo.**
+
+<!--
+sub-comando
+-->
 
 ---
 
@@ -311,10 +342,17 @@ layout: section
 
 
 - Una comunidad de estudiantes apasionados por el software abierto y los proyectos colaborativos.
-- Puedes sumarte! Entra a nuestro <mdi-discord class="inline" /> [Discord](https://discord.com/invite/VMXCNAvjPW) o <mdi-telegram class="inline" /> [Telegram](https://t.me/joinchat/gF0vFkKWZZxiZTIx). También puedes suscribirte a anuncios en [**t.me/open_source_uc**](https://t.me/open_source_uc)
+- Puedes sumarte! Entra a nuestro <mdi-discord class="inline" /> [Discord](https://discord.com/invite/VMXCNAvjPW) o <mdi-telegram class="inline" /> [Telegram](https://t.me/joinchat/gF0vFkKWZZxiZTIx). También puedes suscribirte a anuncios en [**t.me/open_source_uc**](https://t.me/open_source_uc).
 
 <br>
 <img style="display: block; margin: 0 auto;" src="/osuc.png" width="1200"/>
+
+---
+
+# Preguntas
+
+<img style="display: block; margin: 0 auto;" src="/xkcd.png" width="290"/>
+
 
 <!--
 En la próxima sesión hablaremos de como sacarle todo el potencial a GitHub y utilizar Git de forma colaborativa, trabajando en proyectos grandes con otras personas.
