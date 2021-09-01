@@ -69,6 +69,7 @@ Los links de descarga a la versión oficial de Git se pueden encontrar en [git-s
 
 También pueden instalar Git junto con una interfaz gráfica, como [GitHub Desktop](https://desktop.github.com/).
 
+
 ---
 layout: section
 ---
@@ -146,7 +147,7 @@ layout: section
 
 # ¿Cómo usamos git?
 
---- 
+---
 
 # Clientes o interfaces de <mdi-git class="inline"/> git
 Hay muchas distintas formas de usar <mdi-git class="inline"/> git, desde la linea de comandos a toda clase de interfaces gráficas.  **Cada una tiene sus beneficios.**
@@ -157,8 +158,11 @@ Hay muchas distintas formas de usar <mdi-git class="inline"/> git, desde la line
 <img style="display: block; margin: 0 auto;" width="600" src="/cli.png"/>
 <br>
 
+<!--
+Git Bash, PowerShell, cmd, terminal, etc
+-->
 
---- 
+---
 
 # Clientes o interfaces de <mdi-git class="inline"/> git
 Hay muchas distintas formas de utilizar <mdi-git class="inline"/> git, desde la linea de comandos a toda clase de interfaces gráficas.  **Cada una tiene sus beneficios.**
@@ -293,7 +297,7 @@ layout: section
 🗒 Puedes abrir el manual que explica la funcionalidad de cualquier comando de git usando `git help <comando>`. Por ejemplo, `git help commit`.
 
 ### Si quieres repasar o explorar mas allá
-📚 **La documentación de git** es notoriamente buena, y viene con un libro, *Pro Git*, de muy buena calidad. (Ambos tienen traducciones en español)
+📚 **[La documentación de git](https://git-scm.com/doc)** es notoriamente buena, y viene con un libro, **[Pro Git](https://git-scm.com/book/es/v2)**, de muy buena calidad. (Ambos tienen traducciones en español)
 
 ### Si tienes problemas o errores inesperados
 🔎 **Googlea!** Git es extremadamente popular, y lo más probable es que no eres la primera persona en el mismo problema. Revisa sitios como [StackOverflow](https://stackoverflow.com/).
@@ -310,3 +314,7 @@ layout: section
 
 <br>
 <img style="display: block; margin: 0 auto;" src="/osuc.png" width="1200"/>
+
+<!--
+En la próxima sesión hablaremos de como sacarle todo el potencial a GitHub y utilizar Git de forma colaborativa, trabajando en proyectos grandes con otras personas.
+-->
