@@ -174,16 +174,18 @@ Hay muchas distintas formas de utilizar <mdi-git class="inline"/> git, desde la 
 # Anatomía de un comando 
 Los comandos en Git siguen un patrón que se conoce como el [estándar POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), por lo que siguen una forma muy similar a otros comandos comunes como `ls`, `cd`, `grep`, entre otros.
 
-<img style="display: block; margin: 0 auto;" src="/anatomia1.png" width="700"/>
+<img style="display: block; margin: 0 auto;" src="/anatomia2.png" width="700"/>
 
-<!-- El comando es el programa, el sub-comando es la acción. -->
+<!-- El comando es el programa, el sub-comando es la acción.
+Este es un comando simple sin opciones y solo un argumento posicional. -->
 ---
 
 # Anatomía de un comando 
 Los comandos en Git siguen un patrón que se conoce como el [estándar POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), por lo que siguen una forma muy similar a otros comandos comunes como `ls`, `cd`, `grep`, entre otros.
 
-<img style="display: block; margin: 0 auto;" src="/anatomia2.png" width="700"/>
+<img style="display: block; margin: 0 auto;" src="/anatomia1.png" width="700"/>
 
+<!-- Ahora agregamos opciones en formato largo o corto -->
 ---
 
 # Los tres estados de <mdi-git class="inline"/> git
@@ -229,7 +231,22 @@ git commit -m "escribe aquí una descripción corta del cambio"
 
 ⚠ &nbsp;**IMPORTANTE:** Después de commitear los cambios, éstos no se suben solos a la nube.
 
-Ya veremos cómo hacerlo.
+---
+
+# Viendo el historial de cambios local
+Podemos usar el comando `git log` para visualizar el historial de commits.
+
+<img style="display: block; margin: 0 auto;" src="/cli3.png" width="900"/>
+
+---
+
+# Viendo el estado de las cosas
+El comando `git status` nos describe el estado en el que se encuentran los cambios, y sugiere comandos para hacer cosas.
+
+<img style="display: block; margin: 0 auto;" src="/cli4.png" width="700"/>
+
+Ante la duda, siempre revisa `git status` para saber qué hacer!
+
 ---
 
 # <tabler-brand-github class="inline" /> GitHub
