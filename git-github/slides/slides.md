@@ -233,6 +233,10 @@ git commit -m "escribe aquí una descripción corta del cambio"
 
 ---
 
+<img style="display: block; margin: 0 auto;" src="/cli5.png" width="800"/>
+
+---
+
 # Viendo el historial de cambios local
 Podemos usar el comando `git log` para visualizar el historial de commits.
 
@@ -298,6 +302,11 @@ layout: section
 
 ---
 
-# Open Source UC
+# <ion-git-branch class="inline"/> Open Source UC
 
-- Contacto, etc
+
+- Una comunidad de estudiantes apasionados por el software abierto y los proyectos colaborativos.
+- Puedes sumarte! Entra a nuestro <mdi-discord class="inline" /> [Discord](https://discord.com/invite/VMXCNAvjPW) o <mdi-telegram class="inline" /> [Telegram](https://t.me/joinchat/gF0vFkKWZZxiZTIx). También puedes suscribirte a anuncios en [**t.me/open_source_uc**](https://t.me/open_source_uc)
+
+<br>
+<img style="display: block; margin: 0 auto;" src="/osuc.png" width="1200"/>
