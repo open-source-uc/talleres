@@ -22,9 +22,9 @@ fonts:
 
 ---
 
-# Taller de Git y GitHub
+# Taller de Git y GitHub <mdi-git class="inline"/>
 
-## **Sesión 1: Introducción a Git y GitHub**
+## **Sesión 1: Introducción a Git**
 <div class="pt-12">
   <a href="https://osuc.dev/" style="border-style: revert;"> <span class="px-2 py-1 rounded cursor-pointer bg-black bg-opacity-60" hover="bg-opacity-100">
     por Open Source UC <ph:link-simple-duotone class="inline"/>
@@ -53,18 +53,19 @@ layout: section
 - Los **fundamentos detrás de git**
 - Un **flujo de uso** de git local 🏠 y remoto ☁, usando GitHub.
 
+<!-- Mensaje pseudomotivacional: es muy dificil, y puede que no lo entiendan todo a la primera, siempre tienen la presentación! -->
 ---
 
-# ¿Cómo instalamos git? ⬇
+# ¿Cómo instalamos <mdi-git class="inline"/> git?
 
 Git puede ser instalado de muchas formas distintas; cuál usar depende del contexto y lo que te pidan!
 
 
 Los links de descarga a la versión oficial de Git se pueden encontrar en [git-scm.com/downloads](https://git-scm.com/downloads).
 
-- En **Windows**, se puede obtener con un installador disponible en la página, que provee una consola de Linux (Git Bash), y con interfaces gráficas como GitHub Desktop.
-- En **macOS**, con Homebrew, usando `brew install git`.
-- Y en **Linux**, puede encontrarse en la mayoria de los administradores de paquetes, como `apt`, `pacman`, `yum` o `brew`.
+- <uiw-windows class="inline"/>  En **Windows**, se puede obtener con un installador disponible en la página, que provee una consola de Linux (Git Bash), y con interfaces gráficas como GitHub Desktop.
+- <uiw-apple class="inline"/>  En **macOS**, con Homebrew, usando `brew install git`.
+- <uiw-linux class="inline"/>  Y en **Linux**, puede encontrarse en la mayoria de los administradores de paquetes, como `apt`, `pacman`, `yum` o `brew`.
 
 También pueden instalar Git junto con una interfaz gráfica, como [GitHub Desktop](https://desktop.github.com/).
 
@@ -88,7 +89,7 @@ layout: section
 
 ---
 
-# Git
+# <mdi-git class="inline"/> git
 
 El sistema de control de versiones mas usado en el mundo!
 
@@ -96,7 +97,7 @@ Git es utilizado por prácticamente todas las compañías de tecnología a nivel
 
 ---
 
-# Git
+# <mdi-git class="inline"/> git
 
 El sistema de control de versiones mas usado en el mundo!
 
@@ -109,17 +110,15 @@ A grandes rasgos Git es:
 
 ---
 
-TODO: Repo local/remoto
-
 <img style="display: block; margin: 0 auto;" src="/distribuido.png" width="700" />
 
 ---
 
-# Git
+# <mdi-git class="inline"/> git
 
 El sistema de control de versiones mas usado en el mundo!
 
-Git es utilizado por prácticamente todas las compañías de tecnología a nivel mundial, haciendo funcionar todo desde Facebook hasta la NASA.
+Git es utilizado por prácticamente todas las compañías de tecnología a nivel mundial, haciendo funcionar todo desde Facebook hasta la NASA. 
 
 A grandes rasgos Git es:
 
@@ -129,7 +128,7 @@ A grandes rasgos Git es:
 
 ---
 
-# Git
+# <mdi-git class="inline"/> git
 
 El sistema de control de versiones mas usado en el mundo!
 
@@ -141,34 +140,16 @@ A grandes rasgos Git es:
 - 🏠 **Local primero** - git solo manda información al servidor cuando tu se lo pides explícitamente (no es Drive!)
 - ➕ **Mayoritariamente aditivo** - borrar cosas de git es muy díficil y requiere comandos especiales (una gran idea!)
 
-
----
-
-TODO: SEPARAR, warning de que todavía no es remoto, cambiar diagrama por ejemplo concreto ayudante y tarea.
-
-# Los tres estados de Git
-Los archivos en Git pueden residir en tres estados distintos:
-
-- 📝 **Modificado:** algo que cambiaste pero que todavía no está en el historial de cambios.
-- ➕ **Stageado** (preparado): algo que marcaste para ser incluido en tu próximo conjunto de cambios.
-- 📂 **Commiteado** (confirmado): Algo que ya fue guardado en el historial de cambios **local**.
-
-⚠  Después de commitear los cambios, éstos no se suben solos a la nube, después veremos cómo hacerlo.
-
-<!-- Agregar diagrama nuevo aquí -->
-<!-- Así es como versiones de nuestros archivos pueden estar en tres lugares distintos: -->
-<!-- <img src="/tres-lugares.png" style="display: block; margin: 0 auto;" width="340"/> -->
-
 ---
 layout: section
 ---
 
-# ¿Cómo usamos Git?
+# ¿Cómo usamos git?
 
 --- 
 
-# Clientes o interfaces de Git
-Hay muchas distintas formas de utilizar Git, desde la linea de comandos a toda clase de interfaces gráficas.  **Cada una tiene sus beneficios.**
+# Clientes o interfaces de <mdi-git class="inline"/> git
+Hay muchas distintas formas de usar <mdi-git class="inline"/> git, desde la linea de comandos a toda clase de interfaces gráficas.  **Cada una tiene sus beneficios.**
 
 - 👩‍💻 Tenemos la interfaz por linea de comandos (consola)
 
@@ -179,8 +160,8 @@ Hay muchas distintas formas de utilizar Git, desde la linea de comandos a toda c
 
 --- 
 
-# Clientes o interfaces de Git
-Hay muchas distintas formas de utilizar Git, desde la linea de comandos a toda clase de interfaces gráficas.  **Cada una tiene sus beneficios.**
+# Clientes o interfaces de <mdi-git class="inline"/> git
+Hay muchas distintas formas de utilizar <mdi-git class="inline"/> git, desde la linea de comandos a toda clase de interfaces gráficas.  **Cada una tiene sus beneficios.**
 
 - 👩‍💻 Tenemos la interfaz por linea de comandos (consola)
 
@@ -190,78 +171,97 @@ Hay muchas distintas formas de utilizar Git, desde la linea de comandos a toda c
 
 ---
 
-TODO: Separar, ejemplo análogo de git, doble confirmación, separar el ejemplo.
+# Anatomía de un comando 
+Los comandos en Git siguen un patrón que se conoce como el [estándar POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), por lo que siguen una forma muy similar a otros comandos comunes como `ls`, `cd`, `grep`, entre otros.
 
-# Flujo de git local
-Para agregar cambios a nuestro historial **local** de Git:
+<img style="display: block; margin: 0 auto;" src="/anatomia1.png" width="700"/>
 
-0. **Editar los archivos**
-1. **Stagearlos**, agregándolos al área de preparación con `git add <nombre_archivo_o_carpeta>`.
-2. **Commitearlos**, agregando los cambios preparados al historial de cambios con `git commit`.
-3. Revisar el estado de nuestro repositorio, utilizando `git status`.
+<!-- El comando es el programa, el sub-comando es la acción. -->
+---
 
-Por ejemplo. Digamos que tenemos un archivo `main.py` en la carpeta `src/` cuyos cambios ahora quieres guardar.
+# Anatomía de un comando 
+Los comandos en Git siguen un patrón que se conoce como el [estándar POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), por lo que siguen una forma muy similar a otros comandos comunes como `ls`, `cd`, `grep`, entre otros.
 
-```bash {1,2|3,4|5,6|all}
-# Pasar los cambios de main.py a preparación (Staging)
-git add src/main.py
-# Guardar los cambios en el historial de Git.
-git commit -m "exribe aqu´una descripción corta del cambio"
-# Verificamos el estado de nuestro repositorio
-git status
+<img style="display: block; margin: 0 auto;" src="/anatomia2.png" width="700"/>
+
+---
+
+# Los tres estados de <mdi-git class="inline"/> git
+Los archivos en Git pueden residir en tres estados distintos, y usamos sub-comandos de Git para moverlos entre ellos.
+
+- 📝 **Modificado:** algo que cambiaste pero que todavía no está en el historial de cambios.
+
+
+---
+
+# Los tres estados de <mdi-git class="inline"/> git
+Los archivos en git pueden residir en tres estados distintos, y usamos sub-comandos de Git para moverlos entre ellos.
+
+- 📝 **Modificado:** algo que cambiaste pero que todavía no está en el historial de cambios.
+
+- ➕ **Stageado** (preparado): algo que marcaste para ser incluido en tu próximo conjunto de cambios.
+```bash
+# Mover los cambios que hiciste en de main.py a preparación (Staging)
+git add Tareas/T0/main.py
 ```
 
 ---
 
-TODO: dividir
-# GitHub
+# Los tres estados de <mdi-git class="inline"/> git
+Los archivos en git pueden residir en tres estados distintos, y usamos sub-comandos de Git para moverlos entre ellos.
+
+- 📝 **Modificado:** algo que cambiaste pero que todavía no está en el historial de cambios.
+
+- ➕ **Stageado** (preparado): algo que marcaste para ser incluido en tu próximo conjunto de cambios.
+
+```bash {0}
+# Mover los cambios que hiciste en de main.py a preparación (Staging)
+git add Tareas/T0/main.py
+```
+
+- 📂 **Commiteado** (confirmado): Algo que ya fue guardado en el historial de cambios **local**.
+
+```bash
+# Empacar los cambios en preparación en un commit
+# Y agregarlos al historial de cambios
+git commit -m "escribe aquí una descripción corta del cambio"
+```
+
+⚠ &nbsp;**IMPORTANTE:** Después de commitear los cambios, éstos no se suben solos a la nube.
+
+Ya veremos cómo hacerlo.
+---
+
+# <tabler-brand-github class="inline" /> GitHub
 ¿Y a dónde mandamos nuestros cambios?
 
 - ☁ GitHub es un servicio que almacena repositorios de Git y permite colaborar fácilmente con otras personas.
 - 📝 Desde la web de GitHub puedes fácilmente ver el historial de cambios y hacer operaciones simples.
 - 👥 Desde GitHub también puedes explorar repos de otras personas, reportar bugs y leer su documentación.
 
-## ¿Pero cómo?
+<br>
+
+<img style="display: block; margin: 0 auto;" src="/github.png" width="800"/>
+
+
+---
+
+# ¿Pero cómo sincronizamos cambios?
 
 Git nos permite conectar nuestro repositorio con un **origen**, un servidor remoto que nos permite sincronizar nuestros cambios y guardarlos de forma segura.
 
 - ⬆ Cuando queremos subir nuestros cambios locales, usamos `git push`.
 - ⬇ Cuando queremos obtener cambios remotos, usamos `git pull`.
 
-
 ---
 layout: section
 ---
 
-# Demostración 🛠
-
-
----
-
-TODO: add con ., cheatsheet al final,
-# El archivo `.gitignore`
-
-Utilizar `git add .` con confianza
-
-Es un archivo que le indica a Git que archivos o directorios ignorar. Cada línea corresponde a un path a ser ignorado, cuyos cambios ya no serán notados por git.
-
-
-```gitignore
-# Normalmente se ignorar archivos autogenerados por el sistema, como
-.DS_Store
-
-# O archivos que solo te sirven a ti, como entornos virtuales
-.venv/
-dist/
-
-# O secretos o contraseñas que nadie debería ver
-.env
-archivo_ultra_secreto.txt
-```
+# <codicon-terminal-bash class="inline"/> Demostración 
 
 ---
 
-# Cómo conseguir ayuda sobre Git
+# Cómo conseguir ayuda sobre <mdi-git class="inline"/> git
 
 ### Si no recuerdas cómo usar un comando
 🗒 Puedes abrir el manual que explica la funcionalidad de cualquier comando de git usando `git help <comando>`. Por ejemplo, `git help commit`.
