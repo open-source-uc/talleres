@@ -86,6 +86,46 @@ layout: section
 <br>
 <img style="display: block; margin: 0 auto;" src="/old-versiones.png" width="300" />
 
+---
+
+# Git
+
+El sistema de control de versiones mas usado en el mundo!
+
+Git es utilizado por prácticamente todas las compañías de tecnología a nivel mundial, haciendo funcionar todo desde Facebook hasta la NASA.
+
+---
+
+# Git
+
+El sistema de control de versiones mas usado en el mundo!
+
+Git es utilizado por prácticamente todas las compañías de tecnología a nivel mundial, haciendo funcionar todo desde Facebook hasta la NASA.
+
+A grandes rasgos Git es:
+
+- 👥 **Distribuido** - git siempre mantiene una copia completa y autónoma del código en cada computador. Es a prueba de incendios 🚒! 
+
+
+---
+
+TODO: Repo local/remoto
+
+<img style="display: block; margin: 0 auto;" src="/distribuido.png" width="700" />
+
+---
+
+# Git
+
+El sistema de control de versiones mas usado en el mundo!
+
+Git es utilizado por prácticamente todas las compañías de tecnología a nivel mundial, haciendo funcionar todo desde Facebook hasta la NASA.
+
+A grandes rasgos Git es:
+
+- 👥 **Distribuido** - git siempre mantiene una copia completa y autónoma del código en cada computador. Es a prueba de incendios 🚒! 
+- 🏠 **Local primero** - git solo manda información al servidor cuando tu se lo pides explícitamente (no es Drive!)
+
 
 ---
 
@@ -102,24 +142,22 @@ A grandes rasgos Git es:
 - ➕ **Mayoritariamente aditivo** - borrar cosas de git es muy díficil y requiere comandos especiales (una gran idea!)
 
 
-
 ---
 
-<img style="display: block; margin: 0 auto;" src="/distribuido.png" width="700" />
-
----
+TODO: SEPARAR, warning de que todavía no es remoto, cambiar diagrama por ejemplo concreto ayudante y tarea.
 
 # Los tres estados de Git
 Los archivos en Git pueden residir en tres estados distintos:
 
 - 📝 **Modificado:** algo que cambiaste pero que todavía no está en el historial de cambios.
 - ➕ **Stageado** (preparado): algo que marcaste para ser incluido en tu próximo conjunto de cambios.
-- 📂 **Commiteado** (confirmado): Algo que ya fue guardado en el historial de cambios.
+- 📂 **Commiteado** (confirmado): Algo que ya fue guardado en el historial de cambios **local**.
 
-Así es como versiones de nuestros archivos pueden estar en tres lugares distintos:
+⚠  Después de commitear los cambios, éstos no se suben solos a la nube, después veremos cómo hacerlo.
 
-
-<img src="/tres-lugares.png" style="display: block; margin: 0 auto;" width="340"/>
+<!-- Agregar diagrama nuevo aquí -->
+<!-- Así es como versiones de nuestros archivos pueden estar en tres lugares distintos: -->
+<!-- <img src="/tres-lugares.png" style="display: block; margin: 0 auto;" width="340"/> -->
 
 ---
 layout: section
@@ -135,10 +173,9 @@ Hay muchas distintas formas de utilizar Git, desde la linea de comandos a toda c
 - 👩‍💻 Tenemos la interfaz por linea de comandos (consola)
 
 <br>
-<img style="display: block; margin: 0 auto;" width="640" src="/cli.png"/>
+<img style="display: block; margin: 0 auto;" width="600" src="/cli.png"/>
 <br>
 
-- 📺 Y muchos, muchos clientes gráficos como GitHub Desktop, GitKraken o incluso VSCode o PyCharm.
 
 --- 
 
@@ -153,11 +190,14 @@ Hay muchas distintas formas de utilizar Git, desde la linea de comandos a toda c
 
 ---
 
-# Flujo de git local
-Despues de editar uno o más archivos en nuestra carpeta de trabajo, queremos primero:
+TODO: Separar, ejemplo análogo de git, doble confirmación, separar el ejemplo.
 
-1. Stagearlos, agregándolos al área de preparación con `git add <archivo>`.
-2. Commitearlos, agregando los cambios preparados al historial de cambios con `git commit`.
+# Flujo de git local
+Para agregar cambios a nuestro historial **local** de Git:
+
+0. **Editar los archivos**
+1. **Stagearlos**, agregándolos al área de preparación con `git add <nombre_archivo_o_carpeta>`.
+2. **Commitearlos**, agregando los cambios preparados al historial de cambios con `git commit`.
 3. Revisar el estado de nuestro repositorio, utilizando `git status`.
 
 Por ejemplo. Digamos que tenemos un archivo `main.py` en la carpeta `src/` cuyos cambios ahora quieres guardar.
@@ -166,13 +206,14 @@ Por ejemplo. Digamos que tenemos un archivo `main.py` en la carpeta `src/` cuyos
 # Pasar los cambios de main.py a preparación (Staging)
 git add src/main.py
 # Guardar los cambios en el historial de Git.
-git commit -m "remover except Exception"
+git commit -m "exribe aqu´una descripción corta del cambio"
 # Verificamos el estado de nuestro repositorio
 git status
 ```
 
 ---
 
+TODO: dividir
 # GitHub
 ¿Y a dónde mandamos nuestros cambios?
 
@@ -197,7 +238,7 @@ layout: section
 
 ---
 
-
+TODO: add con ., cheatsheet al final,
 # El archivo `.gitignore`
 
 Utilizar `git add .` con confianza
