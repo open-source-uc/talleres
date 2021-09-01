@@ -253,6 +253,11 @@ Git nos permite conectar nuestro repositorio con un **origen**, un servidor remo
 - ⬆ Cuando queremos subir nuestros cambios locales, usamos `git push`.
 - ⬇ Cuando queremos obtener cambios remotos, usamos `git pull`.
 
+<br>
+
+<img style="display: block; margin: 0 auto;" src="/cli2.png" width="700"/>
+
+<!-- Lo que se sincronizan son los commits y no nuestro directorio de trabajo directamente. -->
 ---
 layout: section
 ---
