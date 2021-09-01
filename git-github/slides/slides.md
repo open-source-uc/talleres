@@ -20,6 +20,7 @@ fonts:
   # for code blocks, inline code, etc.
   mono: 'Fira Code'
 
+colorSchema: 'dark'
 ---
 
 # Taller de Git y GitHub <mdi-git class="inline"/>
