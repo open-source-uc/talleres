@@ -126,20 +126,18 @@ layout: cover
 
 ```bash
 # Crea una rama llamada <nueva-rama> a partir de mi rama actual
-git checkout -b <nueva-rama>
-or
 git branch <nueva-rama>
 ```
+
 <br/>
     
 - 💱 **Cambio de rama**: La acción de mover de una rama de git a otra
 
 ```bash
 # Navegar entre las ramas
-git checkout <rama-existente>
-or
 git switch <rama-existente>
-
+# Crear y cambiar de rama
+git switch -c <nueva-rama>
 ```
 <br/>
 
@@ -150,10 +148,97 @@ git switch <rama-existente>
 # Y la fusionas o unes con la rama que nombres a continuación
 git merge <rama-a-traer>
 ```
+
+> `git switch [-c]` es equivalente a git `checkout [-b]`
+
+---
+
+## Flujo común de trabajo local
+
+<br>
+
+
+```bash{1-3|5-6|8-9|11-12|14-15|all}
+# Partiendo en la rama main
+# Se crea una rama y se navega a ella
+git switch -c add-workflow
+
+# Se agregan los cambios a la zona de empaquetado
+git add .
+
+# Se realizan cambios con
+git commit -m "<mensaje del commit>"
+
+# Una vez listos los cambios, uno va a main
+git switch main
+
+# Y une los cambios de la rama nueva
+git merge add-workflow
+```
+
 ---
 layout: section
 ---
+
+# Pull (Merge) Request
+
+---
+
+<!-- - ¿Que es una Pull request?
+- ¿Porque hacerlas?
+- ¿Que se hace al revisar una PR? -->
+## Pull (Merge) Request
+
+<br/>
+
+- Una Pull Request (PR) o Merge Request es una **solicitud a unir cambios de una rama a otra**.
+- Cuando uno hace `git merge` localmente, el único registro que queda de la unión son los commits nuevos. Hacer una PR es crear un registro en el repositorio, con opcionalmente una descripción de los cambios y una discusión.
+- Hacer PRs es una parte esencial en el trabajo colaborativo con ramas. Se utiliza en flujos de trabajo como GitHub-Flow y Git-Flow.
+
+<br/>
+<img src="/gh-flow.svg" width="800" style="margin:0 auto"/>
+
+---
+
+## PRs en GitHub
+
+Una vez subida una rama con cambios a GitHub, se podrá hacer una PR en https://github.com/{usuario}/{repo}/pull/new/{nombre-rama} o en el interfaz, con el siguiente botón:
+
+<img src="/new-pr.png" width="150" style="margin:0 auto"/>
+
+Para luego añadir un título a la PR y opcionalmente añadiendo una descripción:
+
+<img src="/pr-form.png" width="600" style="margin:0 auto"/>
+
+<!-- <div style="color:white;background:#2ea043;padding: 5px 16px;display:box">New pull request</div> -->
+
+
+---
+
+## Discusión
+
+- La PR estará disponible para todos los que puedan ver el repositorio.
+
+- Todos ellos podrán **añadir comentarios** en el código. Esto se suele hacer al realizar **revisiones de pares**, donde otra persona que no participo en los cambios revisa los cambios, y ve si estos deben (o no) ser unidos.
+
+- Estas reseñas se hacer en la sección de cambios realizados (_Files changed_), en la opción de Review Changes. Opcionalmente uno puede seleccionar trozos de código en los numeros junto a las lineas a comentar para indicar las lineas a comentar.
+
+
+---
+layout: section
+---
+
+# Demostración
+
+
+---
+layout: section
+---
+
 # Comandos de ayuda extra
+
+
+
 ---
 layout: default
 ---
@@ -217,3 +302,12 @@ git stash pop
 
 <img style="display: block; margin: 0 auto;" src="/xkcd.png" width="290"/>
 
+---
+
+# <ion-git-branch class="inline"/> Open Source UC
+
+- Una comunidad de estudiantes apasionados por el software abierto y los proyectos colaborativos.
+- Puedes sumarte! Entra a nuestro <mdi-discord class="inline" /> [Discord](https://discord.com/invite/VMXCNAvjPW) o <mdi-telegram class="inline" /> [Telegram](https://t.me/joinchat/gF0vFkKWZZxiZTIx). También puedes suscribirte a anuncios en [**t.me/open_source_uc**](https://t.me/open_source_uc).
+
+<br>
+<img style="display: block; margin: 0 auto;" src="/osuc.png" width="1200"/>
