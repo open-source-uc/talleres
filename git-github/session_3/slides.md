@@ -355,6 +355,15 @@ layout: section
 
 ---
 
+# <img src="/github_icon.png" width="300" style="display: block; margin: 0 auto;"/> [Crear cuenta de GitHub](https://github.com/signup)
+
+---
+
+---
+layout: section
+
+---
+
 # <codicon-terminal-bash class="inline"/> [Demostración](https://github.com/Baelfire18/template-taller-git)
 
 ---
@@ -563,7 +572,7 @@ Para luego añadir un título a la PR y opcionalmente añadiendo una descripció
 layout: section
 ---
 
-# Demostración
+# <codicon-terminal-bash class="inline"/> [Demostración](https://github.com/Baelfire18/template-taller-git)
 
 ---
 layout: section
