@@ -82,7 +82,7 @@ layout: section
 - Nos permite evitar esto:
 
 <br>
-<img style="display: block; margin: 0 auto;" src="/old-versiones.png" width="300" />
+<img style="display: block; margin: 0 auto;" src="old-versiones.png" width="300" />
 
 ---
 
@@ -99,7 +99,7 @@ Git es utilizado por prácticamente todas las compañías de tecnología a nivel
 El sistema de control de versiones mas usado en el mundo!
 
 
-<img style="display: block; margin: 0 auto;" src="/distribuido_2.png" width="300" />
+<img style="display: block; margin: 0 auto;" src="distribuido_2.png" width="300" />
 
 ---
 
@@ -108,7 +108,7 @@ El sistema de control de versiones mas usado en el mundo!
 El sistema de control de versiones mas usado en el mundo!
 
 
-<img style="display: block; margin: 0 auto;" src="/distribuido.png" width="700" />
+<img style="display: block; margin: 0 auto;" src="distribuido.png" width="700" />
 
 ---
 layout: section
@@ -140,7 +140,7 @@ Hay muchas distintas formas de usar <mdi-git class="inline"/> git, desde la cons
 - 👩‍💻 Consola (o interfaz por linea de comandos)
 
 <br>
-<img style="display: block; margin: 0 auto;" width="500" src="/git_bash.png"/>
+<img style="display: block; margin: 0 auto;" width="500" src="git_bash.png"/>
 <br>
 
 <!--
@@ -155,7 +155,7 @@ Hay muchas distintas formas de usar <mdi-git class="inline"/> git, desde la cons
 
 - 📺 Y muchos, muchos clientes gráficos como [GitHub Desktop](https://desktop.github.com/), [GitKraken](https://www.gitkraken.com/) o incluso [VSCode](https://code.visualstudio.com/docs/editor/versioncontrol) o [PyCharm](https://www.jetbrains.com/help/pycharm/enabling-version-control.html).
 
-<img style="display: block; margin: 0 auto;" width="750" src="/github.png"/>
+<img style="display: block; margin: 0 auto;" width="750" src="github.png"/>
 
 ---
 layout: section
@@ -273,8 +273,8 @@ git log
 
 # Ejemplo de uso de <mdi-git class="inline"/> git
 <div class="row">
-  <img style="margin: 5% 0; padding: 0 5px; float: left; width: 50%;" src="/git_use_1.png"/>
-  <img style="margin: 5% 0; padding: 0 5px; float: left; width: 50%;" src="/git_use_2.png"/>
+  <img style="margin: 5% 0; padding: 0 5px; float: left; width: 50%;" src="git_use_1.png"/>
+  <img style="margin: 5% 0; padding: 0 5px; float: left; width: 50%;" src="git_use_2.png"/>
 </div>
 
 ---
@@ -289,9 +289,9 @@ Podemos usar el comando `git log` para visualizar el historial de commits.
   (medio nitpick xd, esta bien)
  -->
 
-<img style="display: block; margin: 0 auto;" src="/git_log.png" width="600"/>
+<img style="display: block; margin: 0 auto;" src="git_log.png" width="600"/>
 <br />
-<img style="display: block; margin: 0 auto;" src="/commits.png" width="600"/>
+<img style="display: block; margin: 0 auto;" src="commits.png" width="600"/>
 
 ---
 
@@ -304,7 +304,7 @@ Podemos usar el comando `git log` para visualizar el historial de commits.
 
 <br>
 
-<img style="display: block; margin: 0 auto;" src="/github_2.png" width="800"/>
+<img style="display: block; margin: 0 auto;" src="github_2.png" width="800"/>
 
 
 ---
@@ -318,44 +318,44 @@ Git nos permite conectar nuestro repositorio con un **origen**, un servidor remo
 
 <br>
 
-<img style="display: block; margin: 0 auto;" src="/cli2.png" width="700"/>
+<img style="display: block; margin: 0 auto;" src="cli2.png" width="700"/>
 
 ---
 
 # ¿Pero cómo sincronizamos cambios?
 
-<img style="display: block; margin: 0 auto;" src="/git_github_0.png" width="700"/>
+<img style="display: block; margin: 0 auto;" src="git_github_0.png" width="700"/>
 
 ---
 
 # ¿Pero cómo sincronizamos cambios?
 
-<img style="display: block; margin: 0 auto;" src="/git_github_1.png" width="700"/>
+<img style="display: block; margin: 0 auto;" src="git_github_1.png" width="700"/>
 
 ---
 
 # ¿Pero cómo sincronizamos cambios?
 
-<img style="display: block; margin: 0 auto;" src="/git_github_2.png" width="700"/>
+<img style="display: block; margin: 0 auto;" src="git_github_2.png" width="700"/>
 
 ---
 
 # ¿Pero cómo sincronizamos cambios?
 
-<img style="display: block; margin: 0 auto;" src="/git_github_3.png" width="700"/>
+<img style="display: block; margin: 0 auto;" src="git_github_3.png" width="700"/>
 
 ---
 
 # ¿Pero cómo sincronizamos cambios?
 
-<img style="display: block; margin: 0 auto;" src="/git_github_4.png" width="700"/>
+<img style="display: block; margin: 0 auto;" src="git_github_4.png" width="700"/>
 
 ---
 layout: section
 
 ---
 
-# <img src="/github_icon.png" width="300" style="display: block; margin: 0 auto;"/> [Crear cuenta de GitHub](https://github.com/signup)
+# <img src="github_icon.png" width="300" style="display: block; margin: 0 auto;"/> [Crear cuenta de GitHub](https://github.com/signup)
 
 ---
 
@@ -387,7 +387,7 @@ layout: section
   sobre estos. Permite añadir cambios en una sin afectar a otras,
   guardando el  historial de manera independiente.🍱
 
-<img style="display: block; margin: 0 auto;" src="/dividir.jpg" width="300"/>
+<img style="display: block; margin: 0 auto;" src="dividir.jpg" width="300"/>
 
 ---
 layout: section
@@ -404,7 +404,7 @@ layout: section
 - Git guarda una imagen del trabajo a partir de los commits. 📸
 
 <br />
-<img style="display: block; margin: 0 auto;" src="/commits.png" width="600"/>
+<img style="display: block; margin: 0 auto;" src="commits.png" width="600"/>
 
 - Las ramas son simplemente "hilos" de commits. Que por detrás
   están marcadas con etiquetas. 🏷️
@@ -416,12 +416,12 @@ layout: section
 - Git guarda una imagen del trabajo a partir de los commits. 📸
 
 <br />
-<img style="display: block; margin: 0 auto;" src="/commits.png" width="600"/>
+<img style="display: block; margin: 0 auto;" src="commits.png" width="600"/>
 
 - Las ramas son simplemente "hilos" de commits. Que por detrás
   están marcadas con etiquetas. 🏷️
 
-<img src="/branch.png" width="750" style="margin:0 auto"/>
+<img src="branch.png" width="750" style="margin:0 auto"/>
 
 ---
 
@@ -540,7 +540,7 @@ layout: section
 - Hacer PRs es una parte esencial en el trabajo colaborativo con ramas. Se utiliza en flujos de trabajo como GitHub-Flow y Git-Flow.
 
 <br/>
-<img src="/gh-flow.svg" width="800" style="margin:0 auto"/>
+<img src="gh-flow.svg" width="800" style="margin:0 auto"/>
 
 ---
 
@@ -548,11 +548,11 @@ layout: section
 
 Una vez subida una rama con cambios a GitHub, se podrá hacer una PR en https://github.com/{usuario}/{repo}/pull/new/{id_pr} o en el interfaz, con el siguiente botón:
 
-<img src="/new-pr.png" width="150" style="margin:0 auto"/>
+<img src="new-pr.png" width="150" style="margin:0 auto"/>
 
 Para luego añadir un título a la PR y opcionalmente añadiendo una descripción:
 
-<img src="/pr-form.png" width="600" style="margin:0 auto"/>
+<img src="pr-form.png" width="600" style="margin:0 auto"/>
 
 <!-- <div style="color:white;background:#2ea043;padding: 5px 16px;display:box">New pull request</div> -->
 
@@ -565,7 +565,7 @@ Para luego añadir un título a la PR y opcionalmente añadiendo una descripció
 
 - Todos ellos podrán **añadir comentarios** en el código. Esto se suele hacer al realizar **revisiones de pares**, donde alguien más revisa los cambios para estar seguros de unirlos al resto del trabajo.
 
-<img src="/discussion.png" width="600" style="margin:0 auto"/>
+<img src="discussion.png" width="600" style="margin:0 auto"/>
 
 
 ---
@@ -626,7 +626,7 @@ git stash pop
   git log --all --oneline --graph
   ```
 
-<img style="display: block; margin: 0 auto;" src="/git-log-2.png" width="400"/>
+<img style="display: block; margin: 0 auto;" src="git-log-2.png" width="400"/>
 
 - Editar interactivamente los N commits pasados de una rama
   ```bash
@@ -656,7 +656,7 @@ sub-comando
 
 # Preguntas
 
-<img style="display: block; margin: 0 auto;" src="/xkcd.png" width="290"/>
+<img style="display: block; margin: 0 auto;" src="xkcd.png" width="290"/>
 
 
 <!--
