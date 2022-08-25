@@ -55,9 +55,16 @@ TODO: legibilidad texto titulo
 
 - Crear cuenta de github
 
-- Usar un template en repo propio y hacer los 4 commits
+- Demostración
 
-- Branching y trabajo colaborativo
+- Ramificación y espacios de trabajo
+
+- Pull/Merge requests
+
+- Demostración
+
+- Comandos ayuda extra
+
 
 ---
 layout: section
@@ -549,7 +556,7 @@ Para luego añadir un título a la PR y opcionalmente añadiendo una descripció
 
 - Todos ellos podrán **añadir comentarios** en el código. Esto se suele hacer al realizar **revisiones de pares**, donde alguien más revisa los cambios para estar seguros de unirlos al resto del trabajo.
 
-- Estas reseñas se hacer en la sección de cambios realizados (_Files changed_), en la opción de Review Changes. Opcionalmente uno puede seleccionar trozos de código en los numeros junto a las lineas a comentar para indicar las lineas a comentar.
+<img src="/discussion.png" width="600" style="margin:0 auto"/>
 
 
 ---
