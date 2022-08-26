@@ -503,7 +503,7 @@ git merge <rama-a-traer>
 ```bash{1-3|5-6|8-9|11-12|14-15|all}
 # Partiendo en la rama main
 # Se crea una rama y se navega a ella
-git branch -b add-workflow
+git checkout -b add-workflow
 
 # Se agregan los cambios a la zona de empaquetado
 git add .
